@@ -27,7 +27,7 @@ Note: Ensure that the Python scripts are added to PATH
 2. let params=new URLSearchParams(window.location.search),course=window.location.pathname.split("/")[3],attempt=params.get("attemptId"),url=window.location.origin+"/learn/api/v1/courses/"+course+"/gradebook/attempts/"+attempt+"/assessment/answers/grades?expand=questionAttempt.question,questionAttempt.answerCorrectness";fetch(url).then(r=>r.json()).then(data=>{console.log(data);let blob=new Blob([JSON.stringify(data)],{type:"application/json"});window.open(URL.createObjectURL(blob))}).catch(e=>console.error(e));
 
 # Copy the .json text and paste it to the locally running website
-# Download the Anki file produce
+# Download the Anki file produced
 
 
 
